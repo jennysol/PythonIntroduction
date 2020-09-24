@@ -28,5 +28,14 @@ while True:
 print('-¨-' *30)
 print(f'Os dados foram {princ}')
 print(f'Ao todo,você cadastrou {len(princ)} pessoas.')
-print(f'O maior valor foi de {maior} kg.')
-print(f'O menor valor foi de {menor} kg.')
+print(f'O maior valor foi de {maior} kg. Peso de ', end='')
+for p in princ:
+    if p[1] == maior:
+        print(f'{p[0]}', end='')
+print()
+
+print(f'O menor valor foi de {menor} kg. Peso de ', end='')
+for p in princ:
+    if p[1] == menor:
+        print(f'[{p[0]}', end='')
+print()
