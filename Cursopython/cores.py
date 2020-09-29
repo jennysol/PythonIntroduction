@@ -21,8 +21,9 @@
 
 #            Back 
 # 40 em diante até 47 seguindo o padrão de cor de text 
-print('\033[31;m Olá Mundo!')
-
+print ('\033[34m'+'Isto eh azul'+'\033[0;0m')
+print('\033[46m' +'Isto eh ciano'+'\033[0;0m')
+print ('\033[42m'+'\033[1m'+'\033[33m'+'Isto eh amarelo negrito com fundo verde'+'\033[0;0m')
 """
 você pode fazer assim para comentar também, linhas grandes etc...
 """ 
