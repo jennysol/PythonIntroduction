@@ -10,6 +10,7 @@ D) Uma lista de pessoas com idade acima da média
 galera = list()
 pessoa = dict()
 soma = média = 0
+# Leitura de dados
 while True:
     pessoa.clear()
 
@@ -31,7 +32,7 @@ while True:
         print(f'ERRO! Responda apenas S ou N.')
     if resp == 'N':
         break
-
+# Resultados 
 print('-'*30)
 print(f'a) Ao todo temos {len(galera)} pessoas cadastradas.')
 
@@ -49,7 +50,7 @@ print()
 print('d) Lista das pessoas que estão acima da média: ')
 for p in galera:
     if p['idade'] >= média:
-        print('   ')
+        print('   ', end='')
         for k, v in p.items():
             print(f' > {k} = {v}; ', end='')
         print()
