@@ -38,7 +38,7 @@ def Gravar():
         print(f'As palavras adicionadas na lista são: \n -{palavra}')
     print()   
 
-    arquivo = open(nome_arquivo, "w")
+    arquivo = open(nome_arquivo, "r+")
     conteudo_user = str(input('Digite [S/Sair] para sair \n ou \nGrave sua palavra: '))
 
     if conteudo_user in lista:
@@ -105,6 +105,5 @@ def Jogar():
         Jogar()
     else:
         Menu()
-
 
 Menu()
